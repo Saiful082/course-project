@@ -290,7 +290,7 @@ header {
     font-size: 1.2rem;
 }
 .faq p {
-    margin-top: 8.0rem;
+    margin-top: 5rem;
     display: none;
 }
 .faq.open p {
@@ -315,4 +315,25 @@ header {
     overflow: hidden;
     margin: 0 auto 1rem;
     border: 1rem solid var(--color-bg1);
+}
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-primary);
+    padding: 2rem;
+    margin: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: red;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
 }
