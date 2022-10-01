@@ -35,7 +35,7 @@ const closeBtn = document.querySelector("#close-menu-btn");
 
 menuBtn.addEventListener('click', () => {
     menu.style.display = "flex";
-    closeBtn.style.display = "inline-block";
+    closeBtn.style.display = "inline-block";   
     menuBtn.style.display = "none";
 })
 
