@@ -115,8 +115,9 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-/* change navbar styles on scroll using javascript */
-.window-scrooll {
+/* ===========change navbar styles on scroll using javascript =============*/
+
+.window-scroll {
     background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -180,6 +181,7 @@ header {
 .categories__container {
     display: grid;
     grid-template-columns: 40% 60%;
+    
 }
 
 .categories__left {
@@ -192,7 +194,7 @@ header {
 
 .categories__right {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
 }
 
@@ -200,7 +202,7 @@ header {
     background: var(--color-bg2);
     padding: 2rem;
     border-radius: 2rem;
-    transition: var(--transition);
+    transition: var(--transition); 
 }
 
 .category:hover {
@@ -235,7 +237,7 @@ header {
     font-size: 0.85rem;
 }
 /* =============POPULAR COURSES============= */
-.course {
+.courses {
     margin-top: 10rem;
 }
 .courses__container {
@@ -521,12 +523,86 @@ footer ul li a:hover {
 
 
 /* ===============MEDIA QUERIES  (PHONE)=============== */
+
 @media screen and( max-width: 600px) {
-   body {
+   .container { 
+    width: var(--container-width-sm); 
+
     
    }
+/* ===============NAVBAR========== */
+
+.nav__menu {
+    right: 3%;
+}
+
+
+/* ===============HEADER========== */
+
+header {
+    height: 100vh;
+}
+
+.header__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+}
+.header__left p {
+    margin-bottom: 1.3rem;
+}
+
+/* ================ CATAGORIES ================== */
+
+.categories__right  {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+
+}
+.category {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.category__icon {
+    margin-top: 4px;
+    display: inline-block;
+}
+
+/* ================== POPULAR COURSES ====================== */
+.courses__container {
+    grid-template-columns: 1fr;
+
+}
+/* ================== TESTIMONIALS ====================== */
+
+.testimonial__body {
+    padding: 1.2rem;
+}
+
+/* ================== FOOTER ====================== */
+
+.footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+}
+.footer__1 p {
+    margin: 1rem auto;
+}
+.footer__socials {
+    justify-content: center;
+
+}
+
+
+/* ==================POPULAR COURSES====================== */
+
+
+   
 }
     
 
     
 
+  01706247476

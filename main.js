@@ -1,7 +1,8 @@
 // change navbar styles on scrool 
 
-window.addEventListener('scrool', () => {
-    document.querySelector('nav').classList.toggle('window-scrool', window.scrollY > 0)
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle
+    ('window-scroll', window.scrollY > 0)
 })
 
 //  show/ hide FAQ answer
